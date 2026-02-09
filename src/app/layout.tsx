@@ -32,13 +32,25 @@ export const metadata: Metadata = {
     template: `%s | ${DATA.name}`,
   },
   description:
-    "Product manager with 8+ years shipping 0→1 products. Currently building AI agents, RAG pipelines, and autonomous workflows with Claude Code and Agent SDK.",
+    "Product manager with 8+ years shipping 0→1 products. Shipped 8+ AI products — autonomous agents, RAG pipelines, and agentic workflows. Open to remote product roles.",
+  keywords: [
+    "product manager",
+    "AI builder",
+    "Claude Code",
+    "Claude Agent SDK",
+    "RAG pipelines",
+    "autonomous agents",
+    "agentic workflows",
+    "0 to 1 products",
+  ],
+  authors: [{ name: "Chakradhar Dhulipalla", url: DATA.url }],
+  creator: "Chakradhar Dhulipalla",
   openGraph: {
     title: "Chakradhar Dhulipalla — AI Product Manager & Builder",
     description:
-      "Product manager with 8+ years shipping 0→1 products. Currently building AI agents, RAG pipelines, and autonomous workflows with Claude Code and Agent SDK.",
+      "PM who builds. 8+ years shipping 0→1 products, 8+ AI products live in production — autonomous agents, RAG pipelines, agentic workflows. Open to remote product roles.",
     url: DATA.url,
-    siteName: DATA.name,
+    siteName: "Chakradhar Dhulipalla",
     locale: "en_US",
     type: "website",
   },
@@ -55,7 +67,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "Chakradhar Dhulipalla — AI Product Manager & Builder",
+    description:
+      "PM who builds. 8+ years shipping 0→1 products, 8+ AI products live in production. Open to remote product roles.",
     card: "summary_large_image",
+    creator: "@chakaborty",
   },
   verification: {
     google: "",

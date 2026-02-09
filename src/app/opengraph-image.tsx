@@ -1,172 +1,286 @@
- 
 import { ImageResponse } from "next/og";
-import { DATA } from "@/data/resume";
 
 export const runtime = "edge";
 
-export const alt = DATA.name;
+export const alt = "Chakradhar Dhulipalla — AI Product Manager & Builder";
 export const size = {
-    width: 1200,
-    height: 630,
+  width: 1200,
+  height: 630,
 };
 export const contentType = "image/png";
 
 const getFontData = async () => {
-    try {
-        const [cabinetGrotesk, clashDisplay] = await Promise.all([
-            fetch(
-                new URL("../../public/fonts/CabinetGrotesk-Medium.ttf", import.meta.url)
-            ).then((res) => res.arrayBuffer()),
-            fetch(
-                new URL("../../public/fonts/ClashDisplay-Semibold.ttf", import.meta.url)
-            ).then((res) => res.arrayBuffer()),
-        ]);
-        return { cabinetGrotesk, clashDisplay };
-    } catch (error) {
-        console.error("Failed to load fonts:", error);
-        return null;
-    }
+  try {
+    const [cabinetGrotesk, clashDisplay] = await Promise.all([
+      fetch(
+        new URL("../../public/fonts/CabinetGrotesk-Medium.ttf", import.meta.url)
+      ).then((res) => res.arrayBuffer()),
+      fetch(
+        new URL(
+          "../../public/fonts/ClashDisplay-Semibold.ttf",
+          import.meta.url
+        )
+      ).then((res) => res.arrayBuffer()),
+    ]);
+    return { cabinetGrotesk, clashDisplay };
+  } catch (error) {
+    console.error("Failed to load fonts:", error);
+    return null;
+  }
 };
 
-const styles = {
-    outerWrapper: {
-        height: "100%",
-        width: "100%",
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "#ffffff",
-        position: "relative",
-    },
-    middleWrapper: {
-        height: "100%",
-        width: "100%",
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "#ffffff",
-        position: "relative",
-        padding: "40px",
-    },
-    wrapper: {
-        height: "100%",
-        width: "100%",
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "#fafafa",
-        position: "relative",
-        padding: "40px",
-        border: "1px solid #e5e5e5",
-        borderRadius: "12px",
-    },
-    imageSection: {
-        position: "absolute",
-        top: "40px",
-        left: "40px",
-        display: "flex",
-        alignItems: "center",
-        zIndex: "2",
-    },
-    mainContainer: {
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "flex-start",
-        justifyContent: "flex-end",
-        height: "100%",
-        width: "100%",
-        position: "relative",
-        zIndex: "1",
-    },
-    image: {
-        width: "140px",
-        height: "140px",
-        borderRadius: "24px",
-        border: "4px solid #e5e5e5",
-        objectFit: "cover",
-    },
-    title: {
-        fontFamily: "Clash Display",
-        fontSize: "48px",
-        fontWeight: "600",
-        lineHeight: "1.1",
-        textAlign: "left",
-        color: "#000000",
-        marginBottom: "16px",
-        letterSpacing: "-0.02em",
-        maxWidth: "900px",
-    },
-    description: {
-        fontSize: "20px",
-        fontWeight: "400",
-        lineHeight: "1.5",
-        textAlign: "left",
-        maxWidth: "800px",
-        color: "#404040",
-        marginBottom: "32px",
-        textWrap: "balance",
-    },
-} as const;
-
 export default async function Image() {
-    try {
-        const fontData = await getFontData();
-        const imageUrl = DATA.avatarUrl
-            ? new URL(DATA.avatarUrl, DATA.url).toString()
-            : undefined;
+  try {
+    const fontData = await getFontData();
 
-        return new ImageResponse(
-            (
-                <div style={styles.outerWrapper}>
-                    <div style={styles.middleWrapper}>
-                        <div style={styles.wrapper}>
-                            {imageUrl && (
-                                <div style={styles.imageSection}>
-                                    <img src={imageUrl} alt={DATA.name} style={styles.image} />
-                                </div>
-                            )}
-                            <div style={styles.mainContainer}>
-                                <div style={styles.title}>{DATA.name}</div>
-                                {DATA.description && (
-                                    <div style={styles.description}>{DATA.description}</div>
-                                )}
-                            </div>
-                        </div>
-                    </div>
+    return new ImageResponse(
+      (
+        <div
+          style={{
+            height: "100%",
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            backgroundColor: "#FAFAF7",
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
+          {/* Subtle warm gradient overlay */}
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              right: 0,
+              width: "600px",
+              height: "600px",
+              background:
+                "radial-gradient(circle at top right, rgba(234, 88, 12, 0.06) 0%, transparent 70%)",
+              display: "flex",
+            }}
+          />
+
+          {/* Orange accent bar at top */}
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              height: "4px",
+              background: "#EA580C",
+              display: "flex",
+            }}
+          />
+
+          {/* Main content */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: "100%",
+              padding: "64px 72px",
+              position: "relative",
+              zIndex: 1,
+            }}
+          >
+            {/* Top: Name + status */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "16px",
+                }}
+              >
+                <div
+                  style={{
+                    fontFamily: "Clash Display",
+                    fontSize: "24px",
+                    fontWeight: 600,
+                    color: "#1C1917",
+                    letterSpacing: "-0.01em",
+                  }}
+                >
+                  Chakradhar Dhulipalla
                 </div>
-            ),
-            {
-                ...size,
-                fonts: fontData
-                    ? [
-                        {
-                            name: "Cabinet Grotesk",
-                            data: fontData.cabinetGrotesk,
-                            weight: 400,
-                            style: "normal",
-                        },
-                        {
-                            name: "Cabinet Grotesk",
-                            data: fontData.cabinetGrotesk,
-                            weight: 700,
-                            style: "normal",
-                        },
-                        {
-                            name: "Clash Display",
-                            data: fontData.clashDisplay,
-                            weight: 600,
-                            style: "normal",
-                        },
-                    ]
-                    : undefined,
-            }
-        );
-    } catch (error) {
-        console.error("Error generating OpenGraph image:", error);
-        return new Response(
-            `Failed to generate image: ${error instanceof Error ? error.message : "Unknown error"}`,
-            {
-                status: 500,
-            }
-        );
-    }
+                <div
+                  style={{
+                    width: "1px",
+                    height: "20px",
+                    backgroundColor: "#D6D3D1",
+                    display: "flex",
+                  }}
+                />
+                <div
+                  style={{
+                    fontFamily: "Cabinet Grotesk",
+                    fontSize: "18px",
+                    color: "#78716C",
+                  }}
+                >
+                  Product Manager & AI Builder
+                </div>
+              </div>
+              {/* Status badge */}
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  backgroundColor: "#F5F5F0",
+                  border: "1px solid #E7E5E4",
+                  borderRadius: "100px",
+                  padding: "8px 16px",
+                }}
+              >
+                <div
+                  style={{
+                    width: "8px",
+                    height: "8px",
+                    borderRadius: "50%",
+                    backgroundColor: "#22C55E",
+                    display: "flex",
+                  }}
+                />
+                <span
+                  style={{
+                    fontFamily: "Cabinet Grotesk",
+                    fontSize: "14px",
+                    color: "#57534E",
+                  }}
+                >
+                  Open to opportunities
+                </span>
+              </div>
+            </div>
+
+            {/* Center: Headline */}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "24px",
+                maxWidth: "900px",
+              }}
+            >
+              <div
+                style={{
+                  fontFamily: "Clash Display",
+                  fontSize: "64px",
+                  fontWeight: 600,
+                  lineHeight: 1.05,
+                  color: "#1C1917",
+                  letterSpacing: "-0.03em",
+                }}
+              >
+                I build AI products — from vision to production code.
+              </div>
+              <div
+                style={{
+                  fontFamily: "Cabinet Grotesk",
+                  fontSize: "22px",
+                  lineHeight: 1.5,
+                  color: "#78716C",
+                  maxWidth: "700px",
+                }}
+              >
+                8+ years shipping 0→1 products. Now building autonomous agents,
+                RAG pipelines, and agentic workflows.
+              </div>
+            </div>
+
+            {/* Bottom: Highlights */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "32px",
+              }}
+            >
+              {[
+                { value: "8+", label: "AI products shipped" },
+                { value: "100k+", label: "MAU at peak" },
+                { value: "$400k+", label: "ARR generated" },
+              ].map((stat) => (
+                <div
+                  key={stat.label}
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    gap: "8px",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily: "Clash Display",
+                      fontSize: "28px",
+                      fontWeight: 600,
+                      color: "#EA580C",
+                      letterSpacing: "-0.01em",
+                    }}
+                  >
+                    {stat.value}
+                  </span>
+                  <span
+                    style={{
+                      fontFamily: "Cabinet Grotesk",
+                      fontSize: "16px",
+                      color: "#A8A29E",
+                    }}
+                  >
+                    {stat.label}
+                  </span>
+                </div>
+              ))}
+
+              {/* Domain */}
+              <div
+                style={{
+                  marginLeft: "auto",
+                  fontFamily: "Cabinet Grotesk",
+                  fontSize: "18px",
+                  color: "#A8A29E",
+                }}
+              >
+                chakradhar.dev
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+      {
+        ...size,
+        fonts: fontData
+          ? [
+              {
+                name: "Cabinet Grotesk",
+                data: fontData.cabinetGrotesk,
+                weight: 400,
+                style: "normal" as const,
+              },
+              {
+                name: "Clash Display",
+                data: fontData.clashDisplay,
+                weight: 600,
+                style: "normal" as const,
+              },
+            ]
+          : undefined,
+      }
+    );
+  } catch (error) {
+    console.error("Error generating OpenGraph image:", error);
+    return new Response(
+      `Failed to generate image: ${error instanceof Error ? error.message : "Unknown error"}`,
+      { status: 500 }
+    );
+  }
 }
-
-
