@@ -45,6 +45,15 @@ export default function ContactSection() {
           >
             <Icons.github className="h-4 w-4" />
           </Link>
+          <Link
+            href="https://x.com/0xauser"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+            className="h-10 w-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground/20 transition-colors"
+          >
+            <Icons.x className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </div>
