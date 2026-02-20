@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Chakradhar Dhulipalla — AI Product Manager & Builder";
+export const alt = "Chakradhar Dhulipalla — AI Implementation Partner";
 export const size = {
   width: 1200,
   height: 630,
@@ -126,7 +126,7 @@ export default async function Image() {
                     color: "#78716C",
                   }}
                 >
-                  Product Manager & AI Builder
+                  AI Implementation Partner
                 </div>
               </div>
               {/* Status badge */}
@@ -157,7 +157,7 @@ export default async function Image() {
                     color: "#57534E",
                   }}
                 >
-                  Open to opportunities
+                  Available for projects
                 </span>
               </div>
             </div>
@@ -181,7 +181,7 @@ export default async function Image() {
                   letterSpacing: "-0.03em",
                 }}
               >
-                I build AI products — from vision to production code.
+                Your AI implementation partner.
               </div>
               <div
                 style={{
@@ -192,8 +192,8 @@ export default async function Image() {
                   maxWidth: "700px",
                 }}
               >
-                8+ years shipping 0→1 products. Now building autonomous agents,
-                RAG pipelines, and agentic workflows.
+                I build AI agents, ship web apps, and automate workflows
+                for businesses — end to end.
               </div>
             </div>
 
@@ -206,9 +206,9 @@ export default async function Image() {
               }}
             >
               {[
-                { value: "8+", label: "AI products shipped" },
-                { value: "100k+", label: "MAU at peak" },
-                { value: "$400k+", label: "ARR generated" },
+                { value: "8+", label: "AI products live" },
+                { value: "10+", label: "years building" },
+                { value: "End to end", label: "delivery" },
               ].map((stat) => (
                 <div
                   key={stat.label}

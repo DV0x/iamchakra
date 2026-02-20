@@ -28,27 +28,27 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: "Chakradhar Dhulipalla — AI Product Manager & Builder",
+    default: "Chakradhar Dhulipalla — AI Implementation Partner",
     template: `%s | ${DATA.name}`,
   },
   description:
-    "Product manager with 8+ years shipping 0→1 products. Shipped 8+ AI products — autonomous agents, RAG pipelines, and agentic workflows. Open to remote product roles.",
+    "I build AI agents, ship web apps, and automate workflows for businesses — end to end. 8+ AI products live in production.",
   keywords: [
-    "product manager",
-    "AI builder",
-    "Claude Code",
-    "Claude Agent SDK",
-    "RAG pipelines",
+    "AI implementation",
+    "AI agents",
+    "AI automation",
+    "web app development",
+    "workflow automation",
     "autonomous agents",
-    "agentic workflows",
-    "0 to 1 products",
+    "AI consulting",
+    "end to end delivery",
   ],
   authors: [{ name: "Chakradhar Dhulipalla", url: DATA.url }],
   creator: "Chakradhar Dhulipalla",
   openGraph: {
-    title: "Chakradhar Dhulipalla — AI Product Manager & Builder",
+    title: "Chakradhar Dhulipalla — AI Implementation Partner",
     description:
-      "PM who builds. 8+ years shipping 0→1 products, 8+ AI products live in production — autonomous agents, RAG pipelines, agentic workflows. Open to remote product roles.",
+      "I build AI agents, ship web apps, and automate workflows for businesses — end to end. 8+ AI products live in production.",
     url: DATA.url,
     siteName: "Chakradhar Dhulipalla",
     locale: "en_US",
@@ -66,9 +66,9 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chakradhar Dhulipalla — AI Product Manager & Builder",
+    title: "Chakradhar Dhulipalla — AI Implementation Partner",
     description:
-      "PM who builds. 8+ years shipping 0→1 products, 8+ AI products live in production. Open to remote product roles.",
+      "I build AI agents, ship web apps, and automate workflows for businesses — end to end. 8+ AI products live in production.",
     card: "summary_large_image",
     creator: "@chakaborty",
   },
