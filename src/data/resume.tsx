@@ -4,7 +4,7 @@ import { HomeIcon } from "lucide-react";
 export const DATA = {
   name: "Chakradhar Dhulipalla",
   initials: "CD",
-  url: "https://chakradhar.dev",
+  url: "https://www.iamchakra.me",
   location: "Remote (US time zones)",
   locationLink: "",
   description:
