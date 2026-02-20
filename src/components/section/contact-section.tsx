@@ -9,10 +9,9 @@ export default function ContactSection() {
           Let&apos;s build something.
         </h2>
         <p className="text-muted-foreground leading-relaxed max-w-2xl">
-          I&apos;m open to remote product roles (US time zones), freelance AI
-          product work, and interesting collaboration. If you&apos;re exploring
-          AI automation or want to ship agent-powered workflows — I&apos;d love
-          to chat.
+          Need AI agents, a web app, or internal workflows automated? I work
+          end to end — from scoping to production. Tell me what you&apos;re
+          trying to solve and let&apos;s figure out if I can help.
         </p>
         <Link
           href="mailto:chakra5027@gmail.com"

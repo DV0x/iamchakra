@@ -6,21 +6,21 @@ const BLUR_FADE_DELAY = 0.04;
 const valueProps = [
   {
     icon: Target,
-    title: "Product Strategy",
+    title: "AI Agents & Automation",
     description:
-      "Roadmapping, JTBD discovery, user research, A/B testing, and growth experimentation. I've owned 0→1 products from concept through $400k+ ARR.",
+      "I build autonomous agents that handle real work — ad creative generation, document processing, lead qualification, internal ops. Not demos, production systems.",
   },
   {
     icon: Zap,
-    title: "AI Engineering",
+    title: "Web Apps & Platforms",
     description:
-      "I build with Claude Code, Agent SDK, RAG pipelines, vector databases, and LLMs. Not just prompts — full autonomous workflows that run in production.",
+      "Full-stack web applications powered by AI. Lead-gen sites, dashboards, CRMs, customer-facing tools — scoped, built, and deployed.",
   },
   {
     icon: Rocket,
-    title: "Ship & Scale",
+    title: "End-to-End Delivery",
     description:
-      "I deploy on Vercel, Cloudflare, and Supabase. I run Meta ad campaigns, set up analytics, and build CRMs. End-to-end, from code to customers.",
+      "I handle the full loop: scoping, building, deploying, and running growth campaigns. One person, no handoffs, no coordination overhead.",
   },
 ];
 

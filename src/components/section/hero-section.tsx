@@ -12,14 +12,14 @@ export default function HeroSection() {
           delay={BLUR_FADE_DELAY}
           className="font-display text-4xl sm:text-5xl lg:text-[64px] font-bold tracking-tight leading-[1.1] text-foreground"
           yOffset={8}
-          text="I build AI products — from vision to production code."
+          text="Your AI implementation partner."
         />
 
         <BlurFade delay={BLUR_FADE_DELAY * 2}>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-            Product manager with 8+ years of shipping. Currently building
-            autonomous AI agents, RAG pipelines, and agentic workflows with
-            Claude Code and Agent SDK.
+            I build AI agents, ship web apps, and automate workflows for
+            businesses — end to end. 8+ years of product experience, 8+ AI
+            products live in production.
           </p>
         </BlurFade>
 
@@ -32,10 +32,10 @@ export default function HeroSection() {
               View my work
             </Link>
             <Link
-              href="#about"
+              href="mailto:chakra5027@gmail.com"
               className="inline-flex items-center justify-center rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             >
-              About me
+              Work with me
             </Link>
           </div>
         </BlurFade>
@@ -47,7 +47,7 @@ export default function HeroSection() {
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
             </span>
             <span className="text-sm text-muted-foreground">
-              Open to remote product roles (US time zones)
+              Available for new projects — remote, US time zones
             </span>
           </div>
         </BlurFade>

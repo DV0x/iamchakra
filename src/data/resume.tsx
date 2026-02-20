@@ -8,9 +8,9 @@ export const DATA = {
   location: "Remote (US time zones)",
   locationLink: "",
   description:
-    "Product manager with 8+ years of shipping. Currently building autonomous AI agents, RAG pipelines, and agentic workflows with Claude Code and Agent SDK.",
+    "AI implementation partner. I build AI agents, ship web apps, and automate workflows for businesses — end to end.",
   summary:
-    "I'm Chakradhar — most people call me Chakra. I'm a product manager who builds.\n\nFor the past 8+ years, I've been shipping products across fintech, creator tools, and crypto. I've taken products from zero to 100k monthly active users, raised ARR to $400k+, and led cross-functional teams through the messy middle of 0→1 builds.\n\nBut somewhere along the way, I realized I didn't want to just write specs and hand them off. I wanted to build.\n\nOver the past year, I've gone deep into Claude Code and Claude Agent SDK. I've shipped 8+ AI products — autonomous ad creative agents, RAG pipelines, fashion shoot video generators, AI-powered lead gen platforms, document automation tools, and more. Some are open-source, some are for clients, all are live in production.\n\nMy positioning is simple: I'm a PM who can build any kind of agentic workflow and ship it to production.",
+    "I'm Chakradhar — most people call me Chakra. I help businesses build and ship AI-powered products.\n\nI've spent the last 10+ years co-founding tech startups and leading product — from a hyperlocal marketplace that scaled to 3 cities and $800k+ revenue, to a SaaS platform that hit 100k MAU, to fintech products that disbursed $360k+ in loans. I've worn every hat: product, engineering, growth, ops.\n\nNow I channel all of that into AI implementation. I work as an end-to-end partner for businesses — building AI agents, shipping web apps, automating internal workflows, and running growth campaigns. 8+ AI products live in production, from autonomous ad creative agents to lead-gen platforms to document automation tools.\n\nYou bring the problem, I handle everything from scoping to production.",
   avatarUrl: "/me.png",
 
   skills: {
@@ -94,7 +94,7 @@ export const DATA = {
       href: "",
       badges: [],
       location: "Remote",
-      title: "Freelance PM & AI Developer",
+      title: "AI Implementation Partner",
       logoUrl: "",
       start: "Oct 2024",
       end: "Present",
