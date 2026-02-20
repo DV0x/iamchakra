@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     description:
       "I build AI agents, ship web apps, and automate workflows for businesses — end to end. 8+ AI products live in production.",
     card: "summary_large_image",
-    creator: "@chakaborty",
+    creator: "@0xauser",
     images: ["/og.png"],
   },
   verification: {
