@@ -53,6 +53,14 @@ export const metadata: Metadata = {
     siteName: "Chakradhar Dhulipalla",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Chakradhar Dhulipalla — AI Implementation Partner",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -71,6 +79,7 @@ export const metadata: Metadata = {
       "I build AI agents, ship web apps, and automate workflows for businesses — end to end. 8+ AI products live in production.",
     card: "summary_large_image",
     creator: "@chakaborty",
+    images: ["/og.png"],
   },
   verification: {
     google: "",
