@@ -193,10 +193,10 @@ export const DATA = {
     {
       school: "Andhra University",
       href: "https://www.andhrauniversity.edu.in",
-      degree: "BE + ME Integrated Mechanical Engineering",
+      degree: "BE Mechanical Engineering",
       logoUrl: "",
       start: "2010",
-      end: "2015",
+      end: "2014",
     },
   ],
 
