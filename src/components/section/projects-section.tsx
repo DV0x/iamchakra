@@ -19,8 +19,8 @@ export default function ProjectsSection() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 10}>
           <p className="text-muted-foreground text-lg">
-            A mix of AI agents, SaaS products, and tools — all live in
-            production.
+            Paid client work, hackathon builds and open source. The label on
+            each card says which.
           </p>
         </BlurFade>
       </div>

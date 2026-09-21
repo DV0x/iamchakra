@@ -116,7 +116,7 @@ export default function AboutSection() {
                       </div>
                     </div>
                     <div className="text-xs tabular-nums text-muted-foreground text-right flex-none">
-                      {edu.start} – {edu.end}
+                      {edu.start} to {edu.end}
                     </div>
                   </Link>
                 ))}

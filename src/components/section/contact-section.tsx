@@ -6,12 +6,12 @@ export default function ContactSection() {
     <div className="rounded-2xl bg-muted/50 border border-border p-10 sm:p-14">
       <div className="flex flex-col items-center gap-6 text-center">
         <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight">
-          Let&apos;s build something.
+          Let&apos;s talk.
         </h2>
         <p className="text-muted-foreground leading-relaxed max-w-2xl">
-          Need AI agents, a web app, or internal workflows automated? I work
-          end to end — from scoping to production. Tell me what you&apos;re
-          trying to solve and let&apos;s figure out if I can help.
+          I&apos;m looking to join a small team as a founding PM, growth lead
+          or creative technologist. If you&apos;re building in creative, ads or
+          media AI, I&apos;d like to hear about it.
         </p>
         <Link
           href="mailto:chakra5027@gmail.com"

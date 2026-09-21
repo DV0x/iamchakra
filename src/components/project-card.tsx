@@ -9,15 +9,18 @@ interface Props {
   href: string;
   description: string;
   oneLiner: string;
-  status: "LIVE" | "BUILDING" | "OPEN SOURCE";
+  status: "PAID CLIENT" | "HACKATHON" | "OPEN SOURCE" | "SIDE PROJECT";
   tags: readonly string[];
   repo?: string;
   className?: string;
 }
 
 const statusStyles = {
-  LIVE: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-400",
-  BUILDING:
+  "PAID CLIENT":
+    "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-400",
+  HACKATHON:
+    "bg-violet-50 text-violet-700 dark:bg-violet-950/50 dark:text-violet-400",
+  "SIDE PROJECT":
     "bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-400",
   "OPEN SOURCE":
     "bg-blue-50 text-blue-700 dark:bg-blue-950/50 dark:text-blue-400",

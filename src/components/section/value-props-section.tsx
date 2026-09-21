@@ -6,21 +6,21 @@ const BLUR_FADE_DELAY = 0.04;
 const valueProps = [
   {
     icon: Target,
-    title: "AI Agents & Automation",
+    title: "Find the bottleneck",
     description:
-      "I build autonomous agents that handle real work — ad creative generation, document processing, lead qualification, internal ops. Not demos, production systems.",
+      "I sit with the people running the business, find what is actually slowing them down, and scope the smallest thing that fixes it.",
   },
   {
     icon: Zap,
-    title: "Web Apps & Platforms",
+    title: "Build the tool",
     description:
-      "Full-stack web applications powered by AI. Lead-gen sites, dashboards, CRMs, customer-facing tools — scoped, built, and deployed.",
+      "Agents, web apps and ad engines, built with Claude Code and the Claude Agent SDK. Bill of Lading drafting, booking and refund ops, on-brand ad creative.",
   },
   {
     icon: Rocket,
-    title: "End-to-End Delivery",
+    title: "Run the growth",
     description:
-      "I handle the full loop: scoping, building, deploying, and running growth campaigns. One person, no handoffs, no coordination overhead.",
+      "Meta and Google Ads, funnels, and WhatsApp and SMS follow-ups, so what I build gets used and gets measured.",
   },
 ];
 
